@@ -6,6 +6,9 @@ module.exports = {
       fontFamily:{
         'popins': 'Poppins,sans-serif',
       },
+      fontSize:{
+        '40':'40px',
+      },
       colors:{
         'mygreen':'#02897A',
         'myblue':'#4D8DFF',
@@ -20,8 +23,12 @@ module.exports = {
       },
       maxWidth: {
         '1170': '1170px',
-      }
-  
+        '600':'600px',
+        '518':'518px'
+      },
+      maxHeight: {
+        '555':'555px',
+      },
     },
   },
   plugins: [],

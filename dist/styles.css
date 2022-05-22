@@ -1,24 +1,35 @@
 .fa-xmark{
     display: none;
+    z-index: 100;
 }
+
 @media only screen and (max-width:872px){
     
     .nav__list{
         margin-left: 10px;
     }
+    .main__btn{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
 }
 @media only screen and (max-width:830px){
     .header__btns{
-        margin-left: 10px
+        margin-left:10px
     }
     .nav__btn{
         padding: 8px 15px;
     }
-    .nav__btn+.nav__btn,
-    .nav__circle{
-        margin-left: 5px;
+    .nav__btn+.nav__btn{
+        margin-left: 10px;
+    }
+    .main__btn{
+        padding-left: 15px;
+        padding-right:15px;
     }
 }
+
+
 @media only screen and (max-width:782px){
     .nav__btn{
         padding: 8px 10px;
@@ -34,8 +45,9 @@
         padding-right: 20px;
         padding-left: 10px;
         padding-bottom: 20px;
-        transform: translateX(-100%);
+        transform: translateY(-150%);
         transition: all .4s;
+        top: 0;
     }
     .nav__input{
         visibility: hidden;
@@ -47,7 +59,7 @@
         display: inline-block;
     }
     .nav__input:checked~.nav{
-        transform: translateX(0);
+        transform: translateY(0);
     }
     .nav__btn{
         width: 100%;
@@ -56,4 +68,53 @@
         margin-left: -2px;
     }
     
+}
+@media only screen and (max-width:756px){
+    .main__btn{
+       padding-left: 10px;
+       padding-right: 10px;
+    }
+}
+@media only screen and (max-width:732px){
+   .main__bg{
+       max-width:360px;
+   }
+}
+@media only screen and (max-width:686px){
+   .main__bg{
+       max-width:300px;
+   }
+}
+@media only screen and (max-width:626px){
+   .main__bg{
+       max-width:280px;
+   }
+}
+@media only screen and (max-width:610px){
+   .main__bg{
+       max-width:250px;
+   }
+}
+@media only screen and (max-width:575px){
+    .main__inner{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .main__title,
+    .main__text{
+        text-align: center;
+        width: 100%;
+        margin: 16px auto;
+    }
+    .main__end{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30px;
+    }
+    .main__btn{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 16px;
+        max-width: 300px;
+    }
 }
