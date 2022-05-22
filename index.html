@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./dist/output.css">
+    <link rel="stylesheet" href="./dist/styles.css">
+</head>
+
+<body>
+    <header>
+        <div class=" w-full max-w-1170 mx-auto px-5 py-5">
+            <a href="#" class="flex items-center md:mr-12 md:hidden">
+                <img src="./images/header-logo.svg" alt="header-logo" class="block">
+                <span class="text-3xl font-bold font-popins ml-3 text-logo">Product</span>
+            </a>
+            <label>
+                <input type="checkbox" class="md:hidden nav__input">
+                <i class="fa-solid fa-bars md:hidden  absolute top-5 fa-2x right-5"></i>
+                <i class="fa-solid fa-xmark md:hidden absolute top-5 fa-2x right-5"></i>
+                <nav class="flex items-center flex-col md:flex-row nav">
+                    <a href="#" class="hidden md:flex items-center md:mr-12">
+                        <img src="./images/header-logo.svg" alt="header-logo" class="block">
+                        <span class="text-3xl font-bold font-popins ml-4 text-logo">Product</span>
+                    </a>
+                    <ul class="flex items-center flex-col md:flex-row w-full md:max-w-sm bg-transparent md:ml-auto md:pb-0 pb-5">
+                        <li class=" mt-5 md:mt-0"><a href="#" class="text-base text-mygrey font-semibold font-popins">Product</a></li>
+                        <li class="md:ml-auto nav__list mt-5 md:mt-0"><a href="#" class="text-base text-mygrey font-medium font-popins">Customers</a></li>
+                        <li class="md:ml-auto nav__list mt-5 md:mt-0"><a href="#" class="text-base text-mygrey font-medium font-popins">Pricing</a></li>
+                        <li class="md:ml-auto nav__list mt-5 md:mt-0"><a href="#" class="text-base text-mygrey font-medium font-popins">Resources</a></li>
+                    </ul>
+                    <div class="header__btns flex flex-col md:flex-row items-center md:ml-6 w-full max-w-xs">
+                        <a href="#" class="border-2 border-slate-200 rounded-md hover:bg-mygreen hover:text-white text-mygrey transition-colors hover:border-mygreen font-popins font-semibold text-base capitalize py-2  px-6 nav__btn  text-center">Sign in</a>
+                        <a href="#" class="border-2 border-slate-200 rounded-md hover:bg-mygreen hover:text-white text-mygrey transition-colors hover:border-mygreen font-popins font-semibold text-base capitalize py-2  px-6 md:ml-auto nav__btn  text-center md:my-0 my-5">Sign up</a>
+                        <a href="#" class="w-8 h-8 rounded-full bg-slate-200 inline-flex md:ml-auto nav__circle items-center justify-center">
+                            <span class="w-5 h-5 rounded-full border-2 border-mygreen inline-block bg-mygreen">
+                                <span class="w-1/2 h-full bg-white rounded-tl-full rounded-bl-full block">
+
+                                </span>
+                            </span>
+                        </a>
+                    </div>
+                </nav>
+            </label>
+        </div>
+    </header>
+</body>
+
+</html>
